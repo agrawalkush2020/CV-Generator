@@ -2,7 +2,7 @@
 The intention here is to create an automated CV generator and database of profiles listed CVs for Human Resource department.
 
 # SKILL SET REQUIRED:
- Django, Python, BootStrap, HTML, CSS, BeautifulSoup, requests
+ Django, Python, BootStrap, HTML, CSS, pdfkit
 
 
 # RESULT:

@@ -11,16 +11,19 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-info" style="background-color: #808080;">
+        <a href="{% url 'list' %}" class="navbar-brand">List-of-Profiles</a>
+    </nav>>
     <div class="container">
         <div class="row m-5">
             <div class="col-md-12">
-                <h1>Automated CV Generator</h1>
+                <h1 style="color:Navy;">Automated CV Generator</h1>
                 <hr>
             </div>
         </div>
         <div class="row m-5">
             <div class="col-md-12">
-                <h4>Please fill out your details</h4>
+                <h4 style="color:Navy;">Please fill out your details</h4>
 
             </div>
         </div>
@@ -35,12 +38,12 @@
 
                     <div class="form-group">
                         <label for="">Email</label>
-                        <input placeholder="Eg demo@gmail.com" type="text" class="form-control" id="email" name="email">
+                        <input placeholder="Eg john@email.com" type="text" class="form-control" id="email" name="email">
                     </div>
 
                     <div class="form-group">
                         <label for="">Phone</label>
-                        <input placeholder="Eg 9999999999" type="text" class="form-control" id="phone" name="phone">
+                        <input placeholder="Eg 123456789" type="text" class="form-control" id="phone" name="phone">
                     </div>
 
                     <div class="form-group">
@@ -51,25 +54,26 @@
 
                     <div class="form-group">
                         <label for="">Work Experience</label>
-                        <textarea placeholder="Software Engineer @ XYZ" type="text" class="form-control" id="work_experience"
-                            name="work_experience"></textarea>
+                        <textarea placeholder="Senior Software Engineer @ XYZ 2015 - 2020" type="text"
+                            class="form-control" id="work_experience" name="work_experience"></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="">Degree</label>
-                        <input placeholder="B.E. Computer Science" type="text" class="form-control" id="degree"
+                        <input placeholder="B.E. in Computer Science" type="text" class="form-control" id="degree"
                             name="degree">
                     </div>
 
                     <div class="form-group">
                         <label for="">School</label>
-                        <input placeholder="MIT" type="text" class="form-control" id="school" name="school">
+                        <input placeholder="Cambridge" type="text" class="form-control" id="school" name="school">
                     </div>
 
 
                     <div class="form-group">
                         <label for="">University</label>
-                        <input placeholder="MIT" type="text" class="form-control" id="university" name="university">
+                        <input placeholder="Oxford University" type="text" class="form-control" id="university"
+                            name="university">
                     </div>
 
                     <div class="form-group">

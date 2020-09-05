@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Candidate Profiles</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-info" style="background-color: #808080;">
+        <a href="{% url 'accept' %}" class="navbar-brand">Home</a>
+    </nav>>
     <div class="container">
         <div class="row m-5 text-center">
-            <div class="col-md-12 text-center">
-                <h2>List Of Profiles CVs</h2>
+            <div class="col-md-6 text-center">
+                <h2 style="color:Navy;">List Of Profiles CVs</h2>
             </div>
 
         </div>
@@ -23,7 +26,7 @@
         {% for profile in profiles %}
         <div class="row">
             <div class="col-md-6">
-                {{profile.name}}
+                <h4 style="color:Navy;">{{profile.name}}</h4>{{profile.work_experience}}
             </div>
             <div class="col-md-6">
                 <a href="/{{profile.pk}}" class="btn btn-warning">Download CV</a>
